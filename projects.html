@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<script src="assets/js/slideshow.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="introduction.html" class="logo">Joey McIntyre</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="introduction.html">Introduction</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+        				<ul class="icons">
+          					<li><a href="https://github.com/joeymcintyre" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          					<li><a href="https://www.linkedin.com/in/joseph-mcintyre-3bb156386/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        				</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<nav class="project-links" aria-label="Project links">
+						<header class="major">
+							<h1>Projects<br />
+							</h1>
+						</header>
+						  <ul>
+						    <li><a href="#firefighter-robot">Firefighter Robot</a></li>
+						    <li><a href="#embedded-3d-spatial-mapping-system">Embedded 3D Spatial Mapping System</a></li>
+						    <li><a href="#classic-snake-game">Classic Snake Game</a></li>
+						    <li><a href="#cmos-xor-gate">CMOS XOR Gate</a></li>
+						    <li><a href="#single-transistor-amplifier">Single-Transistor Amplifier</a></li>
+						    <li><a href="#ideal-voltage-controlled-switches">Ideal Voltage-Controlled Switches</a></li>
+						    <li><a href="#dc-power-supply">DC Power Supply</a></li>
+						  </ul>
+						</nav>
+
+
+							<section class="projects">
+							  <article id="firefighter-robot">
+							    <header>
+							      <h2>Firefighter Robot</h2>
+							    </header>
+
+							    <!-- Firefighter Robot slideshow -->
+								<div class="slideshow" data-autoplay="false" data-interval="5000">
+								  <div class="slides">
+								    <img src="images/fire1.jpg" alt="Front view" loading="lazy">
+								    <img src="images/fire2.jpg" alt="Left view" loading="lazy">
+								    <img src="images/fire3.jpg" alt="Back view" loading="lazy">
+								    <img src="images/fire4.jpg" alt="Right view" loading="lazy">
+								    <img src="images/fire5.jpg" alt="Top view" loading="lazy">
+								    <img src="images/fire6.jpg" alt="Sensor and LCD circuit design" loading="lazy">
+								    <img src="images/fire7.jpg" alt="Motor driver circuit design" loading="lazy">
+								    <img src="images/fire8.jpg" alt="Fan circuit design" loading="lazy">
+								  </div>
+
+								  <!-- Controls -->
+								  <button class="nav prev" aria-label="Previous image">&#10094;</button>
+								  <button class="nav next" aria-label="Next image">&#10095;</button>
+
+								  <!-- Dots -->
+								  <div class="dots" aria-label="Slideshow pagination"></div>
+								</div>
+
+							    <p>Developed an autonomous robot that navigates a maze, detects room entry, and extinguishes flames using a mounted fan. Designed and fabricated custom PCBs, assembled circuits, and integrated multiple sensors with real-time feedback on an LCD display.</p>
+								<p>Skills: </p>
+							    <ul>
+									<li>Integration of linear/rotary encoder sensors. </li>
+									<li>Implementing Optoelectronic and Spectral Sensitivity Detectors. </li>
+									<li>LCD display for real-time sensor data visualization. </li>
+									<li>PCB design and soldering. </li>
+									<li>Motor control for differential drive (two-wheel system). </li>
+									<li>Wall-following and line-counting algorithms for maze navigation. </li>
+									<li>PIC Microcontroller Programming. </li>
+									<li>Wiring sysetms together and troubleshooting circuits. </li>
+								</ul>
+								<ul class="actions special">
+								  <li>
+								    <a href="https://youtube.com/shorts/EA2S6XuA8sk" 
+								       target="_blank" 
+ 								       class="button">
+								       Watch Demo
+								    </a>
+								  </li>
+								</ul>
+							  </article>
+
+							  <article id="embedded-3d-spatial-mapping-system">
+							    <header>
+							      <h2>Embedded 3D Spatial Mapping System</h2>
+							    </header>
+							    <!-- 3D Spatial Mapping System slideshow -->
+								<div class="slideshow slim" data-autoplay="false" data-interval="4000">
+								  <div class="slides">
+								    <img src="images/map1.jpg" alt="Hardware setup" loading="lazy">
+								    <img src="images/map2.png" alt="Map example" loading="lazy">
+								    <img src="images/map3.png" alt="Map example" loading="lazy">
+									<img src="images/map4.png" alt="Mapped location" loading="lazy">
+								  </div>
+
+								  <!-- Controls -->
+								  <button class="nav prev" aria-label="Previous image">&#10094;</button>
+								  <button class="nav next" aria-label="Next image">&#10095;</button>
+
+								  <!-- Dots auto-filled by JS -->
+								  <div class="dots" aria-label="Slideshow pagination"></div>
+								</div>
+							    <p>Designed and built a 3D spatial mapping system using a VL53L1X Time-of-Flight sensor mounted on a stepper motor and controlled by an MSP-EXP432E401Y microcontroller. The system generated real-time distance maps, transmitted data via UART for visualization, and used onboard LEDs to indicate system status during operation.</p>
+								<p>Skills: </p>
+ 								<ul class="skills-list">
+ 								  <li>C programming on MSP432E401Y (interrupts, GPIO, UART, I²C)</li>
+ 								  <li>VL53L1X ToF sensor integration + data acquisition</li>
+ 								  <li>Stepper motor control with ULN2003 driver</li>
+ 								  <li>Custom hardware wiring + power management</li>
+ 								  <li>Python (PySerial, NumPy, Open3D) for data processing + visualization</li>
+ 								  <li>3D point cloud generation + interactive mesh rendering</li>
+ 								  <li>Testing + validation against real-world hallway scans</li>
+ 								</ul>
+								<ul class="actions special">
+								  <li>
+								    <a href="https://github.com/joeymcintyre/Embedded-3D-Spatial-Mapping-System/tree/main" 
+								       target="_blank" 
+								       class="button">
+								       View on GitHub
+								    </a>
+								  </li>
+								</ul>
+							  </article>
+
+							  <article id="classic-snake-game">
+							    <header>
+							      <h2>Classic Snake Game</h2>
+							    </header>
+								<div class="image fit">
+								  <img src="images/snake.png" alt="Snake Game screenshot">
+								</div>
+							    <p>Built an object-oriented C++ implementation of the Snake game with modular classes, dynamic memory management, and real-time controls. Implemented randomized food generation, snake growth and scoring, collision detection, and wraparound movement while applying clean OOD principles and testing practices.</p>
+								<p>Skills: </p>
+ 								  <ul class="skills-list">
+								    <li>Object-oriented design: encapsulation, composition, modular class structure</li>
+								    <li>Real-time input handling with MacUILib</li>
+							    	<li>Snake movement algorithm using custom array list</li>
+								    <li>Randomized food generation and scoring system</li>
+								    <li>Collision detection and game-over conditions</li>
+								    <li>Dynamic memory management (Rule of Six / Minimum Four)</li>
+								    <li>Unit testing and iterative design workflow</li>
+ 								  </ul>
+								<ul class="actions special">
+								  <li>
+								    <a href="https://github.com/joeymcintyre/CPP-Snake-Game" 
+								       target="_blank" 
+								       class="button">
+								       View on GitHub
+								    </a>
+								  </li>
+								</ul>
+							  </article>
+
+							  <article id="cmos-xor-gate">
+							    <header>
+							      <h2><a href="#">CMOS XOR Gate</a></h2>
+							    </header>
+
+							    <!-- Slideshow -->
+							    <div class="slideshow" data-autoplay="false">
+							      <div class="slides">
+							        <img src="images/xor1.png" alt="XOR gate schematic" loading="lazy">
+							        <img src="images/xor2.png" alt="CD4007 chip wiring" loading="lazy">
+							      </div>
+							      <button class="nav prev">&#10094;</button>
+							      <button class="nav next">&#10095;</button>
+							      <div class="dots"></div>
+							    </div>
+
+							    <p>
+							      Built and tested a CMOS XOR gate at the transistor level using two CD4007 chips.
+							      Verified functionality with digital I/O, characterized voltage transfer levels,
+							      and measured timing performance with a capacitive load.
+							    </p>
+
+							    <p>Skills: </p>
+							    <ul class="skills-list">
+							      <li>Transistor-level digital circuit design with CMOS logic</li>
+							      <li>Applying PMOS/NMOS sizing principles</li>
+							      <li>Breadboard prototyping with CD4007 MOSFET arrays</li>
+							      <li>Functional, static level, and timing performance testing</li>
+							      <li>Using Analog Discovery 3 for digital I/O and oscilloscope analysis</li>
+							      <li>Comparing CMOS logic and pass-transistor designs</li>
+							    </ul>
+
+							    <ul class="actions special">
+							      <li>
+							        <a href="https://github.com/joeymcintyre/ELECENG-2EI4/tree/main/Project%204"
+							           target="_blank" class="button">View on GitHub</a>
+							      </li>
+							    </ul>
+							  </article>
+
+							  <article id="single-transistor-amplifier">
+							    <header>
+							      <h2><a href="#">Single-Transistor Amplifier</a></h2>
+							    </header>
+
+							    <!-- Slideshow -->
+							    <div class="slideshow" data-autoplay="false">
+							      <div class="slides">
+							        <img src="images/amp1.png" alt="Amplifier schematic" loading="lazy">
+							        <img src="images/amp2.png" alt="LTspice simulation results" loading="lazy">
+							        <img src="images/amp3.png" alt="Breadboard amplifier build" loading="lazy">
+							      </div>
+ 							      <button class="nav prev">&#10094;</button>
+							      <button class="nav next">&#10095;</button>
+							      <div class="dots"></div>
+							    </div>
+
+							    <p>
+							      Designed, simulated, and built a single-transistor amplifier to drive a 100 Ω load
+							      with less than 10% attenuation. Verified gain, linearity, and signal fidelity using
+							      LTspice simulations and oscilloscope measurements.
+							    </p>
+
+							    <p>Skills: </p>
+							    <ul class="skills-list">
+							      <li>Analog circuit design with MOSFETs or BJTs</li>
+							      <li>Selecting and justifying amplifier topologies</li>
+							      <li>Simulation of amplifier behavior (DC, transient, frequency response)</li>
+							      <li>Breadboard prototyping with limited supply rails</li>
+							      <li>Measuring gain, linearity, and fidelity using test equipment</li>
+							      <li>Comparing theoretical, simulated, and experimental results</li>
+							    </ul>
+
+							    <ul class="actions special">
+							      <li>
+							        <a href="https://github.com/joeymcintyre/ELECENG-2EI4/tree/main/Project%203"
+							           target="_blank" class="button">View on GitHub</a>
+							      </li>
+							    </ul>
+							  </article>
+
+							  <article id="ideal-voltage-controlled-switches">
+							    <header>
+							      <h2><a href="#">Ideal Voltage-Controlled Switches</a></h2>
+							    </header>
+
+							    <!-- Slideshow -->
+							    <div class="slideshow" data-autoplay="false">
+							      <div class="slides">
+							        <img src="images/switch1.png" alt="Switch circuit schematic" loading="lazy">
+							        <img src="images/switch2.png" alt="Breadboard prototype" loading="lazy">
+							        <img src="images/switch3.png" alt="Oscilloscope test output" loading="lazy">
+							        <img src="images/switch4.png" alt="Final circuit measurement" loading="lazy">
+									<img src="images/switch5.png" alt="Final circuit measurement" loading="lazy">
+									<img src="images/switch6.png" alt="Final circuit measurement" loading="lazy">
+							      </div>
+							      <button class="nav prev">&#10094;</button>
+							      <button class="nav next">&#10095;</button>
+							      <div class="dots"></div>
+							    </div>
+
+							    <p>
+							      Designed and tested two types of “ideal” voltage-controlled switches using MOSFETs
+							      and supporting components. Implemented circuits to approximate ideal behavior,
+							      evaluated non-idealities, and developed a structured test plan with quantitative measurements.
+							    </p>
+
+							    <p>Skills: </p>
+							    <ul class="skills-list">
+							      <li>Circuit design with MOSFETs, diodes, and passive components</li>
+							      <li>Translating ideal device concepts into practical hardware</li>
+							      <li>Breadboard prototyping and systematic testing</li>
+							      <li>Measuring and analyzing non-ideal behaviors</li>
+							      <li>Developing and executing structured test plans</li>
+							      <li>Troubleshooting and refining designs for performance/cost trade-offs</li>
+							    </ul>
+
+							    <ul class="actions special">
+							      <li>
+							        <a href="https://github.com/joeymcintyre/ELECENG-2EI4/tree/main/Project%202"
+							           target="_blank" class="button">View on GitHub</a>
+							      </li>
+							    </ul>
+							  </article>
+
+
+							  <article id="dc-power-supply">
+							    <header>
+							      <h2>DC Power Supply</h2>
+							    </header>
+
+							    <!-- Slideshow with 4–6 pictures -->
+							    <div class="slideshow" data-autoplay="false">
+							      <div class="slides">
+							        <img src="images/psu1.png" alt="Circuit schematic" loading="lazy">
+							        <img src="images/psu2.png" alt="LTspice simulation" loading="lazy">
+							        <img src="images/psu3.png" alt="Breadboard build" loading="lazy">
+							      </div>
+							      <button class="nav prev">&#10094;</button>
+							      <button class="nav next">&#10095;</button>
+							      <div class="dots"></div>
+							    </div>
+
+							    <!-- Brief description -->
+							    <p>
+							      Designed and built a DC power supply that converted 120 V AC into a stable
+							      3 V ±0.1 V DC output at 10 mA. The project included transformer design,
+							      full-wave rectification, capacitor filtering, LTspice simulation, and oscilloscope
+							      validation using the Analog Discovery 3.
+							    </p>
+
+							    <!-- Skills -->
+							    <p>Skills: </p>
+								<ul class="skills-list">
+								  <li>Power electronics design and analysis</li>
+								  <li>AC to DC conversion using rectification and filtering</li>
+								  <li>Simulation and validation with LTspice</li>
+								  <li>Breadboard prototyping and safe circuit construction</li>
+								  <li>Measurement and debugging with oscilloscopes and test equipment</li>
+								  <li>Applying theoretical calculations to practical hardware</li>
+								  <li>Troubleshooting discrepancies between simulation and real-world results</li>
+								  <li>Documenting design process and performance evaluation</li>
+								</ul>
+
+							    <!-- GitHub Button -->
+							    <ul class="actions special">
+							      <li>
+							        <a href="https://github.com/joeymcintyre/ELECENG-2EI4/tree/main/Project%201"
+							           target="_blank"
+							           class="button">
+							           View on GitHub
+							        </a>
+							      </li>
+							    </ul>
+							  </article>
+							</section>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Joey McIntyre</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,172 @@
+/* Single-column, centered projects */
+.projects article {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Center the title link too */
+.projects article h2 a { 
+  border-bottom: 0; /* optional: remove underline */
+}
+
+/* Shrink and center images (override .image.fit img) */
+.projects article .image.fit img {
+  width: 50% !important;     /* half width on desktop */
+  max-width: 640px;          /* don’t get huge on 4K screens */
+  height: auto;
+  margin: 0 auto;            /* center horizontally */
+  display: block;
+}
+
+/* Keep text readable width */
+.projects article p {
+  max-width: 58ch;
+  margin: 0.75rem auto 0;
+}
+
+/* Mobile: use full-width images */
+@media (max-width: 980px) {
+  .projects article .image.fit img {
+    width: 100% !important;
+    max-width: none;
+  }
+}
+
+/* center everything in the article by default */
+.projects article {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* override just the skills list */
+.projects article ul {
+  text-align: left;
+  margin: 1rem auto;
+  display: inline-block; /* centers the list block, keeps bullets left-aligned */
+}
+
+/* re-center the button(s) */
+.projects article .actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Slideshow container: centered, responsive width */
+.slideshow {
+  position: relative;
+  margin: 1.5rem auto 0;
+  width: 50%;
+  max-width: 640px;
+}
+
+/* Mobile: full width */
+@media (max-width: 980px) {
+  .slideshow { width: 100%; max-width: none; }
+}
+
+/* Slides: only one visible at a time */
+.slideshow .slides img {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+.slideshow .slides img.active { display: block; }
+
+/* Prev/Next arrows */
+.slideshow .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.slideshow .nav:hover { background: rgba(0,0,0,0.65); }
+.slideshow .prev { left: 0.35rem; }
+.slideshow .next { right: 0.35rem; }
+
+/* Force slideshow dots to be clean circles */
+.slideshow .dots button {
+  all: unset;                /* reset Massively’s default button styles */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c0c6cc;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.slideshow .dots button.active {
+  background: #4c5661;       /* darker when active */
+}
+
+/* Respect your centered article text & button */
+.projects article { text-align: center; margin-bottom: 4rem; }
+.projects article .actions { display: flex; justify-content: center; margin-top: 1.5rem; }
+
+/* Skills list left-aligned under centered content (from earlier) */
+.projects article ul { text-align: left; margin: 1rem auto; display: inline-block; }
+
+/* normalize skills list alignment across all projects */
+.projects article .skills-list {
+  text-align: left;
+  margin: 0 auto 1.5rem;
+  max-width: 700px;
+  list-style-type: disc;
+  padding-left: 1.25rem;   /* adjust bullet indent */
+}
+
+.projects article .skills-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Project link container */
+.project-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;      /* reduce vertical spacing */
+  text-align: center;
+}
+
+/* Each link as inline-block */
+.project-links li {
+  display: inline-block;
+  margin: 0.4rem;         /* tighter spacing between buttons */
+}
+
+/* Force button styling */
+.project-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid #444;     /* dark border for button look */
+  border-radius: 6px;
+  background: transparent;    /* transparent fill */
+  color: #444 !important;     /* dark text */
+  font-weight: 600;
+  text-transform: uppercase;  /* optional: all caps */
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Hover + focus states */
+.project-links a:hover,
+.project-links a:focus {
+  background: #444;
+  color: #fff !important;     /* invert colors */
+}
+
+/* Only shrink the Snake Game image */
+#classic-snake-game .image.fit img {
+  width: 40% !important;    /* smaller than default */
+  max-width: 400px;         /* prevents it from getting too big */
+  margin: 0 auto;
+  display: block;
+}
